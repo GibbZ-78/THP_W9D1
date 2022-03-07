@@ -33,10 +33,11 @@
 1. Create an empty directory on your :computer:
 2. Clone the current :octocat: repository to the latter
 3. Play with the different "blue" buttons to activate a feature
-4. Have (giga) fun :satisfied: with the proposed approach to solve the different exrcise  
+4. Have (giga) fun :satisfied: with the proposed approach to solve the different exercises  
   
-_NB 1: before clicking a "blue" button, remember to click the "red" one to reinit' / reload the page_
-_NB 2: be sure to check your brower's console to see :eyes: some of the (somehow hidden) results of the above :wink:_
+_NB 1: before clicking one or several "blue" button(s), remember it might be needed to click the "red" one to reinit' / reload the page first_
+_NB 2: Note some of the above "features" can be combined though, hence do not require to reload / reinit (ex. nr. 7 and 8)_  
+_NB 3: be sure to check your brower's console to see :eyes: some of the (somehow hidden) results of the above :wink:_
   
 ### :three: Credits :closed_lock_with_key:
 &copy; 2022 - Jean-Baptiste VIDAL ([Github repo](https://github.com/GibbZ-78))
