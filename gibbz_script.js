@@ -116,24 +116,38 @@ function functionality_06() {
   });
 }
 
-// JBV - Capture clicks on the "==>" arrow to make last card first, etc.
+// JBV - Capture clicks on the "==>" arrow to make last card become first, etc.
 function functionality_07() {
   console.log("Fonctionnalité n°7 enclenchée !");
   let my_right_arrow = document.querySelectorAll("section.jumbotron > div > p > a")[1];
   console.log(`  > Intitulé du lien visé : ${my_right_arrow.innerHTML}`);
+  console.log("  > La première carte a pour image : " + document.querySelectorAll("div.row > div.col-md-4 > div.card")[0].querySelector("img").src);
   my_right_arrow.addEventListener("click",
     function () {
-      console.log("  > Et on fait tourner les cartes (dédicace à P. Sébastien, si tu nous entends...)");
-      var my_card = document.querySelectorAll("div.card")[-1];
-      my_card.remove();
-      document.querySelectorAll("div.card").insertBefore(my_card, document.querySelectorAll("div.card")[0]);
+      console.log("  > Et on fait tourner les cartes vers la droite (dédicace à P. Sébastien, si tu nous entends...)");
+      // Am wondering if a "let" instead of a "var" would change something here...?
+      var my_card = document.querySelectorAll("div.row > div.col-md-4")[5];
+      document.querySelector("div.album > div.container > div.row").insertBefore(my_card, document.querySelector("div.album > div.container > div.row").firstElementChild);
+      console.log("  > A présent, la 1ère carte est celle qui affiche : " + document.querySelectorAll("div.row > div.col-md-4")[0].querySelector("img").src);
     });
-  console.log(" > La première carte est: " + document.querySelectorAll("div.card")[0]);
 }
 
-// JBV - 
+// JBV - Capture clicks on the "<==" arrow to make first card become last, etc. 
+//       NB : before that, disabling the existing link to THP web site is required, though
 function functionality_08() {
-
+  console.log("Fonctionnalité n°8 enclenchée !");
+  let my_left_arrow = document.querySelectorAll("section.jumbotron > div > p > a")[0];
+  my_left_arrow.href = "#"; // Disabling the previously active link to THP web site... Wouldn't it be a little trap?
+  console.log(`  > Intitulé du lien visé : ${my_left_arrow.innerHTML}`);
+  console.log("  > La première carte a pour image : " + document.querySelectorAll("div.row > div.col-md-4 > div.card")[0].querySelector("img").src);
+  my_left_arrow.addEventListener("click",
+    function () {
+      console.log("  > Et on fait tourner les cartes vers la gauche (RE-dédicace à P. Sébastien, si tu nous entends...)");
+      // Am wondering if a "let" instead of a "var" would change something here...?
+      var my_card = document.querySelectorAll("div.row > div.col-md-4")[0];
+      document.querySelector("div.album > div.container > div.row").appendChild(my_card);
+      console.log("  > A présent, la 1ère carte est celle qui affiche : " + document.querySelectorAll("div.row > div.col-md-4")[0].querySelector("img").src);
+    });
 }
 
 // JBV - 
