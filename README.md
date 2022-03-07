@@ -32,8 +32,8 @@
   
 1. Create an empty directory on your :computer:
 2. Clone the current :octocat: repository to the latter
-3. Have (giga) fun :satisfied: with the proposed approach to solve the different exrcise 
-NB: be sure to check your brower's console to see :eyes: some of the (somehow hidden) results of the above :wink:
+3. Have (giga) fun :satisfied: with the proposed approach to solve the different exrcise  
+_NB: be sure to check your brower's console to see :eyes: some of the (somehow hidden) results of the above :wink:_
   
 ### :three: Credits :closed_lock_with_key:
 &copy; 2022 - Jean-Baptiste VIDAL ([Github repo](https://github.com/GibbZ-78))
